@@ -35,19 +35,19 @@ body {
 }
 
 nav {
-    display: flex;
-    justify-content: flex-end;
-    gap: 30px;
+    width: max-content;
+    margin-left: auto;
     background-color: aliceblue;
-    padding-top: 25px;
-    height: 70px;
+    padding: 17px 0;
     box-shadow: 0 0 0 100vh aliceblue;
     clip-path: inset(0 -100vh);
-    top: 0;
 }
 
 nav ul {
-    margin-right: 160px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1em;
 }
 
 nav ul li a {
@@ -61,7 +61,6 @@ nav ul li {
     font-size: 1.25rem;
     transition: 1000ms ease;
     font-weight: 400;
-    margin-right: 60px;
     color: #012970;
 }
 
@@ -76,9 +75,14 @@ nav ul li a:hover {
     font-family: "montrasent", sans-serif;
 }
 
+.home>div {
+    width: 100%;
+    text-align: center;
+}
+
 .home2 img {
-    height: 60vh;
-    width: 80vh;
+    /* height: 60vh; */
+    width: 100%;
     margin-top: 80px;
     animation-duration: 2s;
     transform: scale(1.1);
@@ -261,9 +265,6 @@ h2 {
 }
 
 @media (min-width: 900px) and (max-width: 1200px) {
-    .main {
-        margin-left: 30px;
-    }
     nav ul {
         font-size: 1rem;
         display: flex;
@@ -325,25 +326,14 @@ h2 {
 }
 
 @media (max-width: 900px) {
-    .main {
-        margin-left: 30px;
-    }
-    nav {
-        padding-left: 180px;
-    }
     nav ul {
         font-size: 1rem;
-        display: flex;
-        margin-left: 20px;
-        margin-right: 1px;
-        flex-direction: row;
     }
     nav ul li {
         display: inline;
         font-family: "popins", sans-serif;
         font-size: 1rem;
         font-weight: 400;
-        margin-right: 40px;
     }
     .home {
         display: flex;
@@ -359,8 +349,6 @@ h2 {
         font-size: 1rem;
     }
     .home2 img {
-        height: 50vh;
-        width: 60vh;
         margin-top: 80px;
     }
     .ourServices {
@@ -400,9 +388,6 @@ h2 {
     }
     .pic {
         margin: 0 40px 0px 40px;
-    }
-    nav ul li {
-        margin-right: 20px;
     }
 }
 
