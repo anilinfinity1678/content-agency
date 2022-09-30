@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 2px solid greenyellow;
 }
 
 :root {
@@ -35,8 +36,6 @@ body {
 }
 
 nav {
-    width: max-content;
-    margin-left: auto;
     background-color: aliceblue;
     padding: 17px 0;
     box-shadow: 0 0 0 100vh aliceblue;
@@ -52,6 +51,7 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
+    text-transform: capitalize;
 }
 
 nav ul li {
