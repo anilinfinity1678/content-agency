@@ -34,6 +34,10 @@ body {
     margin-inline: auto;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 nav {
     background-color: aliceblue;
     padding: 17px 0;
